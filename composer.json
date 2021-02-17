@@ -1,0 +1,13 @@
+{
+    "name": "dinu/creatu-contact",
+    "description": "This is default contact page from creatu developers",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Dinu\\CreatuContact\\": "src/"
+        }
+    }
+}
