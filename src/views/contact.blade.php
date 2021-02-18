@@ -42,8 +42,8 @@ input[type=submit]:hover {
 <h3>Contact Form</h3>
 
 <div class="container">
-  <form action="{{route('contact')}}" method="post">
-  @csrf
+  <form action="{{route('contact')}}" method="post" accept-charset="UTF-8">
+  {!! csrf_field() !!}
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
