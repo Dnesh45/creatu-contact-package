@@ -43,7 +43,7 @@ input[type=submit]:hover {
 
 <div class="container">
   <form action="{{route('contact')}}" method="post">
-  {{ csrf_token() }}
+  @csrf
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
