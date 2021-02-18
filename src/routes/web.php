@@ -2,11 +2,11 @@
 
 use Illuminate\Http\Request;
 
-Route::group(['namespace' => 'Dinu\CreatuContact\Http\Controllers'],function(){
+Route::group(['middleware' => 'web'],function(){
 
-    Route::get('/contact','ContactController@index');
+    Route::get('/contact','Dinu\CreatuContact\Http\Controllers\ContactController@index');
     
-    Route::post('/contact','ContactController@send')->name('contact');
+    Route::post('/contact','Dinu\CreatuContact\Http\Controllers\ContactController@send')->name('contact');
 
 });
 
